@@ -1,0 +1,35 @@
+package com.cd.utility.color
+
+import androidx.compose.ui.graphics.Color
+
+val Purple200 = Color(0xFFBB86FC)
+val Purple500 = Color(0xFF6200EE)
+val Purple700 = Color(0xFF3700B3)
+val Teal200 = Color(0xFF03DAC5)
+
+val primaryColor = Color(0xFF52B0E9)
+val TextColor = Color(0xFF000000)
+val TextColorForDark = Color(0xFFF5F4EB)
+
+val TextLightColor = Color(0x80000000)
+val TextLightColorForDark = Color(0x80F5F4EB)
+val gray = Color(0xFFACBAB8)
+val gray_20 = Color(0x33ACBAB8)
+val TextWhite = Color(0xFFFFFFFF)
+val LightWhite = Color(0xFFFFFFFA)
+val lightPrimaryColor = Color(0xFFD2EAF9)
+val lightestPrimaryColor = Color(0xFFF5FBFF)
+val lightShadePrimaryColor = Color(0xFFE5F0F7)
+val black = Color(0xFF292C32)
+val blackText = Color(0xFF233332)
+val lightGray = Color(0xFF798483)
+val red = Color(0xFFEE7156)
+val ActionColor = Color(0xFF00B86C)
+val LightActionColor_20 = Color(0x3300B86C)
+val bg = Color(0xFFDEE5EA)
+val Gray_200 = Color(0xFF233332)
+val Sky_Color = Color(0xFFD5EEFF)
+val LightBlueColor = Color(0x5252B0E9)
+val green = Color(0xFF3EBD60)
+val lightyellow = Color(0xFFFBE4BF)
+val yellow = Color(0xFFFBE4BF4D)
