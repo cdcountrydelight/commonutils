@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.cd.utility.toast_model.showToast
 import com.cd.utility.ui.theme.AndroidLibraryTheme
 
 class MainActivity : ComponentActivity() {
@@ -23,6 +24,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     Greeting("Android")
+//                    "TEST".showToast(this)
                 }
             }
         }
