@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="image_compression_failed">Image compression failed</string>
+    <string name="something_went_wrong_try_again_later">Something went wrong. Try again later</string>
+    <string name="file_name_must_not_be_empty">File name should not be empty</string>
+</resources>
