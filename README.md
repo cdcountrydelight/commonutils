@@ -17,6 +17,8 @@ allprojects {
 #### Step 2. Add the dependency
 ```
 dependencies {
+        implementation 'com.github.cdcountrydelight:commonutils:1.0.0'
+   	or
 	implementation 'com.github.kpanjiyar:commonutils:1.0.0'
 }
 ```
