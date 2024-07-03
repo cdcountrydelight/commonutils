@@ -4,29 +4,25 @@ import android.content.Context
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
-import androidx.datastore.preferences.core.emptyPreferences
-import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.CoroutineStart
-import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.map
-import java.io.IOException
 
-class PreferenceDataStore(private val context: Context, private val preferenceName : String = "delivery_app") : IPreferenceDataStoreAPI{
+class PreferenceDataStore(
+    private val context: Context,
+    private val preferenceName: String = "delivery_app"
+) : IPreferenceDataStoreAPI {
 
     val Context.datastore: DataStore<Preferences> by preferencesDataStore(name = preferenceName)
-    private val dataSource = context.datastore
+    val dataSource = context.datastore
 
 
     override suspend fun <T> getPreference(key: Preferences.Key<T>, defaultValue: T):
             Flow<T> = flow {
         val result = dataSource.data.map {
-            it[key]?: defaultValue
+            it[key] ?: defaultValue
         }.first()
         emit(result)
     }
